@@ -1,0 +1,11 @@
+.background-container {
+  background-color: #673AB7;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  color: white;
+}
