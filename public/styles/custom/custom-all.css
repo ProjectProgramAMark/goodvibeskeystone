@@ -5,3 +5,7 @@ h1 {
 p {
 	text-align: center;
 }
+html, body, .container {
+  height: 100%;
+
+}
