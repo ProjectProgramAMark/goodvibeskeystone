@@ -5,7 +5,7 @@ block css
 block content
   // NEED TO POPULATE WITH MORE CONTENT, AND FIGURE OUT HOW TO
   // MAKE BACKGROUND IMAGE OVER ENTIRE PAGE. ONLY DOING HALF RN
-  .container
+  div#snowfall.container
     h1 Good Vibes Central!
     br
     br
@@ -20,12 +20,18 @@ block content
         p Lights All Night is coming up, get your tickets 
           a(href="https://www.eventbrite.com/e/lights-all-night-2015-tickets-14712598779") here!
       div.col-md-4
+        h1 Other stuff
+        p Looking to see some of our pictures? Check out our 
+          a(href="/gallery") gallery!
+        p If you're part of Good Vibes Central, feel free to 
+          a(href="/keystone/signin") sign in 
+          to add more to the pictures, or our 
+          a(href="/blog") blog. 
+        p Also, if you have any questions or suggestions for the site, feel free to ask any one of the GVC crew!
+          
+      div.col-md-4
         h1 Decadence!
         p Decadence is coming up, get your tickets 
-          a(href="http://www.axs.com/events/268533/decadence-2-day-pass-tickets/promopage/3483?skin=ccc") here!
-      div.col-md-4
-        h1 Ultra Music Festival!
-        p Ultra Music Festival is coming up, get your tickets 
           a(href="http://www.axs.com/events/268533/decadence-2-day-pass-tickets/promopage/3483?skin=ccc") here!
 block js
   // Adding countdown timer
@@ -41,3 +47,7 @@ block js
           countdown: true
         });
       });
+  script(src="js/blizzard-builder/canvas-snow.js")
+  script.
+    var falling = new Blizzard('snowfall');
+      
